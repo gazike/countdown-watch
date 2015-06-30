@@ -1,0 +1,50 @@
+html, body, .container .container-fluid {
+    height: 100vh;
+    min-height: 100vh;
+    /*background-color: #113951;*/
+    color: #dddddd;
+    /*width: 100vw;*/
+    /*min-width: 100vw;*/
+}
+
+.countdown-watch {
+    padding-top: 20vh;
+    text-align: center;
+    float: none;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 30vh;
+    vertical-align: top;
+    text-shadow: 1px 1px 5px #cccccc;
+
+}
+
+.controllable {
+    display: inline-block;
+}
+
+.time-separator {
+    vertical-align: top;
+}
+
+.val-buttons {
+    display: block;
+    font-weight: bold;
+}
+
+.minus {
+    visibility: hidden;
+    vertical-align: top;
+}
+
+.hidden-value {
+    visibility: hidden;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10vh;
+    vertical-align: bottom;
+}

@@ -1,0 +1,30 @@
+@(message: String)
+
+@main("Welcome to Play") {
+    <div class="container">
+        <div class="row">
+            <div class="countdown-watch">
+                <span class="minus value">-</span>
+                <span>
+                    <span class="controllable minutes">
+                        <span id="minutes-value" class="value">00</span>
+                        <span class="btn-group-vertical val-buttons" role="group">
+                            <button id="increase-minutes" type="button" class="btn btn-default btn-md">+</button>
+                            <button id="decrease-minutes" type="button" class="btn btn-default btn-md">-</button>
+                        </span>
+                    </span>
+                    <span class="time-separator value">:</span>
+                    <span class="controllable seconds">
+                        <span id="seconds-value" class="value">00</span>
+                        <span class="btn-group-vertical val-buttons" role="group">
+                            <button id="increase-seconds" type="button" class="btn btn-default btn-md">+</button>
+                            <button id="decrease-seconds" type="button" class="btn btn-default btn-md">-</button>
+                        </span>
+                    </span>
+                </span>
+                <span class="value hidden-value">-</span>
+            </div>
+        </div>
+    </div>
+    <footer>Press any key or click the digits to start/stop the timer</footer>
+}
