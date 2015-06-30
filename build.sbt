@@ -9,8 +9,7 @@ lazy val playserver = (project in file("play")).settings(
   scalaVersion := scalaV,
   scalaJSProjects := clients,
   libraryDependencies ++= Seq(
-    "com.vmunier" %% "play-scalajs-scripts" % "0.2.1",
-    "org.webjars" % "jquery" % "2.1.3"
+    "com.vmunier" %% "play-scalajs-scripts" % "0.2.1"
   )
 ).enablePlugins(PlayScala).
   aggregate(clients.map(projectToRef): _*).
@@ -26,7 +25,7 @@ lazy val scalajsclient = (project in file("scalajs")).settings(
     "org.scala-js" %%% "scalajs-dom" % "0.8.0",
     "be.doeraene" %%% "scalajs-jquery" % "0.8.0",
     "com.lihaoyi" %%% "scalarx" % "0.2.8",
-    "com.lihaoyi" %% "utest" % "0.3.1"
+    "com.lihaoyi" %% "utest" % "0.3.1" % "test"
   ),
   testFrameworks += new TestFramework("utest.runner.Framework")
 ).enablePlugins(ScalaJSPlugin, ScalaJSPlay)
